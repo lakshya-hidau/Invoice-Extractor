@@ -1,4 +1,4 @@
-import google.generativeai as genai
+import google-generativeai as genai
 from dotenv import load_dotenv
 import os
 import streamlit as st
@@ -82,4 +82,5 @@ if submit and uploaded_file is not None:
 
     if response:
         st.subheader("💡 Extracted Information")
+
         st.write(response)
