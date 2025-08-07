@@ -7,7 +7,7 @@ import PyPDF2
 
 load_dotenv()   # Load environment variables from .env file
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 def get_gemini_response(input, image, prompt):
     model = genai.GenerativeModel('gemini-2.5-flash-lite')
